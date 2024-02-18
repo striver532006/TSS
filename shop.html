@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop.com</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="body  bg-gradient-to-t from-slate-400 to-slate-800 md:bg-gradient-to-r md:from-pink-500 md:to-blue-400">
+    <header class="md:bg-gradient-to-r md:from-purple-600 md:to-red-400 py-4 px-8">
+        <nav class="flex justify-between items-center w-full">
+          <div class="w-16">
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/devil-logo-png-transparent.png"alt=""class=""></img>
+          </div>
+          <div class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+            <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-12 courser-pointer text-3xl">
+              <li>
+                <a href="#" class="hover:text-gray-600 cursor-pointer">Products</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-gray-600 cursor-pointer">Solution</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-gray-600 cursor-pointer">Resource</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-gray-600 cursor-pointer">Developers</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-gray-600 cursor-pointer">Pricing</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex items-center gap-6">
+            <button class="bg-[#a6c1ee] hover:bg-[#87acec] text-white px-5 py-2 rounded-full bg-gradient-to-r from-red-600 to-pink-500">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 inline-block">
+                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                </svg>Sign in
+            </button>
+            <div>
+              <ion-icon onclick="onToggleMenu(this)"name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+          </div>
+        </nav>
+      </header>
+    
+            <!-- <div class="flex items-center gap-6 ml-28">
+                 <button class="text-white px-5 py-2 rounded-full bg-gradient-to-r from-red-600 to-pink-500">Sign in</button> 
+                <a href=""><button class="bg-gradient-to-r md:from-pink-600 md:to-blue-600 from-slate-900 to-slate-700 rounded-full py-4 px-5 text-gray-300 hover:text-gray-200 text-2xl self-start hover:from-red-600 hover:to-blue-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 inline-block">
+                        <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                    </svg> SHOP NOW</button>
+                </a>
+                <div>
+                    <ion-icon onclick="onToggleMenu(this)"name="menu" class="text-3xl cursor-pointer md:hidden text-white"></ion-icon>
+                </div>
+            </div> -->
+
+        </nav>
+      </header>
+
+    <div class="container mx-[8rem] md:mx-auto w-[60rem] md:w-auto">
+        <!-- <header class="md:bg-gradient-to-r md:from-pink-500 md:to-blue-400">
+            <nav class="flex justify-between items-center w-[98%] md:bg-gradient-to-r mx-auto md:from-pink-600 md:to-blue-500"">
+              <div class="">
+                <img src="https://cdn.freebiesupply.com/logos/large/2x/devil-logo-png-transparent.png"alt=""class="w-[8rem]"/>
+              </div>
+                <div class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh left-0 top-[-100%] md:w-auto w-full flex items-center px-5 text-3xl">
+                    <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-12 courser-pointer">
+                        <li>
+                            <a href="#" class="hover:text-purple-600 cursor-pointer">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-purple-600 cursor-pointer">Men</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-purple-600 cursor-pointer">Women</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-purple-600 cursor-pointer">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-6">
+                     <button class="text-white px-5 py-2 rounded-full bg-gradient-to-r from-red-600 to-pink-500">Sign in</button> -
+                    <a href=""><button class="bg-gradient-to-r md:from-pink-600 md:to-blue-600 from-slate-900 to-slate-700 rounded-full py-4 px-5 text-gray-300 hover:text-gray-200 text-2xl self-start hover:from-red-600 hover:to-blue-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 inline-block">
+                            <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                        </svg> SHOP NOW</button>
+                    </a>
+                    <div>
+                        <ion-icon onclick="onToggleMenu(this)"name="menu" class="text-3xl cursor-pointer md:hidden text-white"></ion-icon>
+                    </div>
+                </div>
+            </nav>
+          </header> -->
+        <!-- <div class="flex md:flex-row md:justify-between text-center">
+            <div class="flex flex-row justify-center my-6 ml-8">
+               <div class="bg-gradient-to-r from-purple-600 to-red-400 w-16 h-16 rounded-lg"></div>
+               <h1 class="text-4xl text-gray-600 ml-6 md:flex md:flex-col hidden">Striver</h1>
+            </div> 
+           <div class="mt-8  ml-4 text-4xl">
+                <a href="" class="text-gray-600 hover:text-purple-600 p-4">Home</a>
+                <a href="" class="text-gray-600 hover:text-purple-600 p-4">Shop</a>
+                <a href="" class="text-gray-600 hover:text-purple-600 p-4">Blog</a>
+                <a href="" class="text-gray-600 hover:text-purple-600 p-4">Contact</a>
+                <a href="" class="text-gray-50 hover:bg-purple-700 p-3 px-5 bg-purple-600 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 inline-block">
+                        <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                    </svg>Cart (0)
+                </a>
+            </div>
+        </div> -->
+        <div class="flex flex-col md:flex md:flex-row mt-20 ml-4">
+            <div class="flex flex-col justify-center">
+                <h1 class="font-serif text-7xl text-gray-400 md:text-gray-600 mb-4">Welcome to Striver Web</h1></h1>
+                <p class="uppercase text-4xl text-gray-500 md:text-gray-600 tracking-wide mt-12">Brand Name</p>
+                <p class="uppercase text-3xl text-gray-500 md:text-gray-600 tracking-wide py-4">Oswal,Nike,Decathlon,Adidas.</p>
+                <!-- <a href=""><button class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-6 px-12 mt-8 text-gray-50 text-2xl self-start hover:from-pink-600 hover:to-pink-500">SHOP NOW</button></a> -->
+            </div>
+            <div>
+                <img src="removal.ai.png" alt="" class="md:w-[50rem] md:h-auto ml-2 md:ml-[8rem] mt-[5rem] w-auto">
+            </div>
+        </div>
+         <!-- MEN COLLECTION -->
+            <!-- T-SHIRT -->
+            <div class="my-20">
+                <div class=" mt-[10rem] my-5 text-center">
+                    <h2 class="text-5xl font-semibold text-blue-600 text-center">Men's Collection</h2>
+                </div>
+            </div> 
+            <div class="my-20">
+                <div class="flex flex-row justify-between my-5 md:ml-[6rem] mr-8">
+                    <h2 class="text-4xl">Men's T-Shirts</h2>
+                    <a href="" class="text-4xl ml-[12rem] flex flex-row">
+                        View All
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>  
+            <div class="grid grid-flex-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ml-[1rem] md:ml-[5rem] gap-10">
+                <div class=" bg-gradient-to-r from-slate-700 to-slate-800 md:bg-gradient-to-r md:from-purple-600 md:to-red-400 shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://www.filmyvastra.com/wp-content/uploads/2019/04/Pocket-avenger-black-1.jpg" alt="" class="rounded-tl-lg rounded-tr-lg">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xk">Men's T-Shirt</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 674.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-cols md:flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 md:py-2 md:px-4 text-gray-50 text-xl self-start my-2  flex flex-row justify-center hover:from-pink-600 hover:to-pink-600 mx-2 mt-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>Add to cart
+                            </a>
+                            <a href="https://www.filmyvastra.com/wp-content/uploads/2019/04/Pocket-avenger-black-1.jpg" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 md:py-2 md:px-4 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 2 -->
+                <div class=" bg-gradient-to-r from-slate-700 to-slate-800 md:bg-gradient-to-r md:from-purple-600 md:to-red-400 shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://www.filmyvastra.com/wp-content/uploads/2019/04/Avenger-pocket-mockups_opt.jpg" alt="" class="rounded-tl-lg rounded-tr-lg">
+                    </div>
+                    <div class="py-8 px-45">
+                        <h3><a href="" class="text-3xl">Men's T-Shirt</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 754.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 md:py-2 md:px-4 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mx-2 mt-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://www.filmyvastra.com/wp-content/uploads/2019/04/Avenger-pocket-mockups_opt.jpg" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 md:py-2 md:px-4 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 3 -->
+                <div class=" bg-gradient-to-r from-slate-700 to-slate-800 md:bg-gradient-to-r md:from-purple-600 md:to-red-400 shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://www.filmyvastra.com/wp-content/uploads/2019/04/Pocket-avenger-1.jpg" alt="" class="rounded-tl-lg rounded-tr-lg">
+                    </div>
+                    <div class="p-5">
+                        <h3><a href="" class="text-3xl">Men's T-Shirt</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 644.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 md:py-2 md:px-4 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mx-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://www.filmyvastra.com/wp-content/uploads/2019/04/Pocket-avenger-1.jpg" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 md:py-2 md:px-4 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 4 -->
+                <div class=" bg-gradient-to-r from-slate-700 to-slate-800 md:bg-gradient-to-r md:from-purple-600 md:to-red-400 shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://www.filmyvastra.com/wp-content/uploads/2019/04/Burgundy-Pocket-Avenger.jpg" alt="" class="rounded-tl-lg rounded-tr-lg">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's T-Shirt</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 832.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 md:py-2 md:px-4 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mx-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://www.filmyvastra.com/wp-content/uploads/2019/04/Burgundy-Pocket-Avenger.jpg" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 md:py-2 md:px-4 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MAN LOWER -->
+            <div class="my-20">
+                <div class="flex flex-row justify-between my-5 md:ml-[6rem]">
+                    <h2 class="text-4xl">Men's Lower</h2>
+                    <a href="" class="text-4xl ml-[12rem] flex flex-row">
+                        View All
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-flex-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ml-[1rem] md:ml-[5rem] gap-10">
+                <div class="bg-gradient-to-r from-slate-700 to-slate-800 md:bg-gradient-to-r md:from-purple-600 md:to-red-400 shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://th.bing.com/th/id/OIP.f2mOgkIf8zPbfDMO1HgqXAHaHa?pid=ImgDet&w=202&h=202&c=7&dpr=1.5" alt="" class="rounded-tl-lg rounded-tr-lg w-[50rem]">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's Lower</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 674.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-cols md:flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 md:py-2 md:px-4 text-gray-50 text-xl self-start my-2  flex flex-row justify-center hover:from-pink-600 hover:to-pink-600 mx-2 mt-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>Add to cart
+                            </a>
+                            <a href="https://www.filmyvastra.com/wp-content/uploads/2019/04/Pocket-avenger-black-1.jpg" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 md:py-2 md:px-4 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 2 -->
+                <div class="bg-gradient-to-r from-slate-700 to-slate-800 md:bg-gradient-to-r md:from-purple-600 md:to-red-400 shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://th.bing.com/th/id/OIP.7UJv9O2nFlgBxFRV4g4HRwHaJM?pid=ImgDet&w=202&h=250&c=7&dpr=1.5" alt="" class="rounded-tl-lg rounded-tr-lg w-[50rem]">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's Lower</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 754.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 md:py-2 md:px-4 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mx-2 mt-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://www.filmyvastra.com/wp-content/uploads/2019/04/Avenger-pocket-mockups_opt.jpg" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 md:py-2 md:px-4 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                  </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 3 -->
+                <div class="bg-gradient-to-r from-slate-700 to-slate-800 md:bg-gradient-to-r md:from-purple-600 md:to-red-400 shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://th.bing.com/th/id/OIP.6jeuinR6Z7-zn3UvTA7pKgHaJD?pid=ImgDet&w=199&h=243&c=7&dpr=1.5" alt="" class="rounded-tl-lg rounded-tr-lg w-[50rem]">
+                    </div>
+                    <div class="">
+                        <h3><a href="" class="text-3xl">Men's Lower</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 644.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 md:py-2 md:px-4 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mx-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://www.filmyvastra.com/wp-content/uploads/2019/04/Pocket-avenger-1.jpg" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 md:py-2 md:px-4 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                  </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 4 -->
+                <div class="bg-gradient-to-r from-slate-700 to-slate-800 md:bg-gradient-to-r md:from-purple-600 md:to-red-400 shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://th.bing.com/th/id/OIP.QeWxoH1k0EGnst1uf0YCAwHaJm?pid=ImgDet&w=199&h=257&c=7&dpr=1.5" alt="" class="rounded-tl-lg rounded-tr-lg w-[50rem]">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's Lower</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 832.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 md:py-2 md:px-4 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mx-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://www.filmyvastra.com/wp-content/uploads/2019/04/Burgundy-Pocket-Avenger.jpg" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 md:py-2 md:px-4 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--MEN SHIRT -->
+            <div class="my-20">
+                <div class="flex flex-row justify-between my-5 md:ml-[6rem]">
+                    <h2 class="text-4xl">Men's Shirt</h2>
+                    <a href="" class="text-4xl flex flex-row ml-[12rem]">
+                        View All
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-flex-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ml-[1rem] md:ml-[6rem] xl:grid-cols-4 gap-10">
+                <!-- image 1 -->
+                <div class="bg-gradient-to-r from-slate-700 to-slate-800 md:bg-gradient-to-r md:from-purple-600 md:to-red-400 shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://s3.amazonaws.com/proper-media/das4-shirts/40a7ccfa337221bb2cab583e7ff105472.jpg" alt="" class="rounded-tl-lg rounded-tr-lg w-[50rem]">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's Shirt</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 864.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-cols md:flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-2  flex flex-row justify-center hover:from-pink-600 hover:to-pink-600 mt-5 mx-2 ">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://s3.amazonaws.com/proper-media/das4-shirts/40a7ccfa337221bb2cab583e7ff105472.jpg" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                  </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- image 2 -->
+                <div class="bg-gradient-to-r from-slate-700 to-slate-800 md:bg-gradient-to-r md:from-purple-600 md:to-red-400 shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://th.bing.com/th/id/OIP.mxagVoom2VupR54pjqD1pAHaJZ?pid=ImgDet&w=199&h=252&c=7&dpr=1.5" alt="" class="rounded-tl-lg rounded-tr-lg w-[40rem] ml-[3rem]">
+                    </div>
+                    <div class="px-4 py-8">
+                        <h3><a href="" class="">Men's Shirt</a></h3>
+                        <a href="" class="">
+                            <div class="text-4xl ml-2 font-bold">₹ 774.00</div>
+                        </a>
+                        <div class="flex flex-row mt-7">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mx-2 mt-8">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://th.bing.com/th/id/OIP.mxagVoom2VupR54pjqD1pAHaJZ?pid=ImgDet&w=199&h=252&c=7&dpr=1.5" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600 mx-2 mt-8">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                  </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- image 3 -->
+                <div class="bg-gradient-to-r from-slate-700 to-slate-800 md:bg-gradient-to-r md:from-purple-600 md:to-red-400 shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://th.bing.com/th/id/OIP.dN8I1PxVjBN8yoTKG6MZRgAAAA?pid=ImgDet&w=199&h=298&c=7&dpr=1.5" alt="" class="rounded-tl-lg rounded-tr-lg w-[40rem] ml-14">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's Shirt</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 738.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mt-7 mx-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://th.bing.com/th/id/OIP.dN8I1PxVjBN8yoTKG6MZRgAAAA?pid=ImgDet&w=199&h=298&c=7&dpr=1.5" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600 mt-7">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- image4 -->
+                <div class="bg-gradient-to-r from-slate-700 to-slate-800 md:bg-gradient-to-r md:from-purple-600 md:to-red-400 shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://th.bing.com/th/id/OIP.1fCgTe0C-HQVoYRZyfnbqwHaJ3?pid=ImgDet&w=199&h=265&c=7&dpr=1.5" alt="" class="rounded-tl-lg rounded-tr-lg ml-14 w-[40rem]">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's Shirt</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 674.00</div>
+                        </a>
+                        <div class="flex flex-row my-3 text-3xl">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mt-7 mx-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://th.bing.com/th/id/OIP.1fCgTe0C-HQVoYRZyfnbqwHaJ3?pid=ImgDet&w=199&h=265&c=7&dpr=1.5" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600 mt-7">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--MEN PANTS -->
+            <div class="my-20">
+                <div class="flex flex-row justify-between my-5 md:ml-[6rem]">
+                    <h2 class="text-4xl">Men's Pants</h2>
+                    <a href="" class="text-4xl flex flex-row ml-[12rem]">
+                        View All
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                          </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-flex-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ml-[1rem] md:ml-[6rem] xl:grid-cols-4 gap-10">
+                <div class="bg-gradient-to-r from-slate-700 to-slate-800 md:bg-gradient-to-r md:from-purple-600 md:to-red-400 shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://cdn.shopify.com/s/files/1/0202/3942/products/folded_ub355_grande.jpg?v=1533567972" alt="" class="rounded-tl-lg rounded-tr-lg w-[50rem]">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's Pant</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 674.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-cols md:flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-2  flex flex-row justify-center hover:from-pink-600 hover:to-pink-600 mx-2 mt-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://cdn.shopify.com/s/files/1/0202/3942/products/folded_ub355_grande.jpg?v=1533567972" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600 mx-2 mt-5">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- image 2 -->
+                <div class="bg-gradient-to-r from-slate-700 to-slate-800 md:bg-gradient-to-r md:from-purple-600 md:to-red-400 shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://s3-eu-west-1.amazonaws.com/ihf-images/pm/9/d799337a-4c3f-4937-a29a-e2ad00e747d0.jpg" alt="" class="rounded-tl-lg rounded-tr-lg w-[60rem]">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's Pants</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 579.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mx-2 mt-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://s3-eu-west-1.amazonaws.com/ihf-images/pm/9/d799337a-4c3f-4937-a29a-e2ad00e747d0.jpg" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600 mx-2 mt-5">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                  </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- image 3 -->
+                <div class="bg-gradient-to-r from-slate-700 to-slate-800 md:bg-gradient-to-r md:from-purple-600 md:to-red-400 shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://images.squarespace-cdn.com/content/v1/5c37cf61506fbe6befe9b173/1550781953426-IWUEOFIA6A9EQ27NNUD5/Navy+Stretch+Twill+-+link+to+product+page" alt="" class="rounded-tl-lg rounded-tr-lg">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's Pant</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 674.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mx-2 mt-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://images.squarespace-cdn.com/content/v1/5c37cf61506fbe6befe9b173/1550781953426-IWUEOFIA6A9EQ27NNUD5/Navy+Stretch+Twill+-+link+to+product+page" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- image 4 -->
+                <div class="bg-gradient-to-r from-slate-700 to-slate-800 md:bg-gradient-to-r md:from-purple-600 md:to-red-400 shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://images.squarespace-cdn.com/content/v1/5c37cf61506fbe6befe9b173/1550781948413-M1OTNNM70JFCEEJJB6UU/Khaki+Green+Stretch+Twill+-+link+to+product+page" alt="" class="rounded-tl-lg rounded-tr-lg">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's Pant</a></h3>
+                        <a href="" class="">                          
+                        <div class="text-6xl ml-2 font-bold">₹ 724.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mx-2 mt-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://images.squarespace-cdn.com/content/v1/5c37cf61506fbe6befe9b173/1550781948413-M1OTNNM70JFCEEJJB6UU/Khaki+Green+Stretch+Twill+-+link+to+product+page" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600 mx-2 mt-5">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!--MEN SHOES -->
+            <div class="my-20">
+                <div class="flex flex-row justify-between my-5 md:ml-[6rem]">
+                    <h2 class="text-4xl">Men's Shoes</h2>
+                    <a href="" class="text-4xl flex flex-row ml-[12rem]">
+                        View All
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-flex-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ml-[1rem] md:ml-[6rem] xl:grid-cols-4 gap-10">
+                <!-- image 1 -->
+                <div class="bg-gradient-to-r from-slate-700 to-slate-800 md:bg-gradient-to-r md:from-purple-600 md:to-red-400 shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://images.bestsellerclothing.in/data/JJ/10-mar-2023/128855501_1.jpg?width=415&height=550&mode=fill&fill=blur&format=auto" alt="" class="rounded-tl-lg rounded-tr-lg w-[50rem]">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's T-Shirt</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 424.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">9</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">7</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">6</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">8</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">10</div>
+                        </div>
+                        <div class="flex flex-cols md:flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-2  flex flex-row justify-center hover:from-pink-600 hover:to-pink-600 mx-2 mt-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://images.bestsellerclothing.in/data/JJ/10-mar-2023/128855501_1.jpg?width=415&height=550&mode=fill&fill=blur&format=auto" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600 mx-2 mt-5">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                  </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--image 2-->
+                <div class="bg-gradient-to-r from-slate-700 to-slate-800 md:bg-gradient-to-r md:from-purple-600 md:to-red-400 shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://images.bestsellerclothing.in/data/JJ/27-july-2023/141105102_g1.jpg?width=415&height=550&mode=fill&fill=blur&format=auto" alt="" class="rounded-tl-lg rounded-tr-lg w-[50rem]">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's Shoes</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 724.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">8</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">7</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">10</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">6</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">9</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mx-2 mt-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://images.bestsellerclothing.in/data/JJ/27-july-2023/141105102_g1.jpg?width=415&height=550&mode=fill&fill=blur&format=auto" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600 mx-2 mt-5">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                  </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- image 3 -->
+                <div class="bg-gradient-to-r from-slate-700 to-slate-800 md:bg-gradient-to-r md:from-purple-600 md:to-red-400 shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://images.bestsellerclothing.in/data/JJ/22-mar-2023/128856101_g1.jpg?width=415&height=550&mode=fill&fill=blur&format=auto" alt="" class="rounded-tl-lg rounded-tr-lg w-[50rem]">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's Shoes</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 484.00</div>
+                        </a>
+                        <div class="flex flex-row  text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">10</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">6</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">8</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">7</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">9</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mx-2 mt-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://images.bestsellerclothing.in/data/JJ/22-mar-2023/128856101_g1.jpg?width=415&height=550&mode=fill&fill=blur&format=auto" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600 mx-2 mt-5">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- image 4 -->
+                <div class="bg-gradient-to-r from-slate-700 to-slate-800 md:bg-gradient-to-r md:from-purple-600 md:to-red-400 shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://images.bestsellerclothing.in/data/JJ/22-sep-2023/136605101_g1.jpg?width=415&height=550&mode=fill&fill=blur&format=auto" alt="" class="rounded-tl-lg rounded-tr-lg w-[50rem]">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's Shoes</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 724.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">7</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">8</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">9</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">10</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">6</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mx-2 mt-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://images.bestsellerclothing.in/data/JJ/22-sep-2023/136605101_g1.jpg?width=415&height=550&mode=fill&fill=blur&format=auto" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600 mx-2 mt-5">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         <!-- WOMEN COLLECTION -->
+            <!-- WOMAN T-SHIRT -->
+            <div class="my-20">
+                <div class=" mt-[20rem] my-5 text-center">
+                    <h2 class="text-6xl font-semibold text-blue-600 text-center">Men's Collection</h2>
+                </div>
+            </div> 
+            <div class="my-20">
+                <div class="flex flex-row justify-between my-5 md:ml-[6rem]">
+                    <h2 class="text-4xl">Women's T-Shirts</h2>
+                    <a href="" class="text-4xl ml-[12rem] flex flex-row">
+                        View All
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>  
+            <div class="grid grid-flex-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ml-[1rem] md:ml-[5rem] gap-10">
+                <div class="shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://th.bing.com/th/id/OIP.ejDOOhFjsx1GswTjbzxd6gHaJ3?w=1340&h=1785&rs=1&pid=ImgDetMain" alt="" class="rounded-tl-lg rounded-tr-lg">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's T-Shirt</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 674.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-cols md:flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-2  flex flex-row justify-center hover:from-pink-600 hover:to-pink-600 mx-2 mt-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>Add to cart
+                            </a>
+                            <a href="https://www.filmyvastra.com/wp-content/uploads/2019/04/Pocket-avenger-black-1.jpg" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 2 -->
+                <div class="shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://i.pinimg.com/originals/3a/39/4b/3a394bdcf82a34e52e79784b1b2053fa.jpg" alt="" class="rounded-tl-lg rounded-tr-lg">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's T-Shirt</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 754.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mx-2 mt-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://www.filmyvastra.com/wp-content/uploads/2019/04/Avenger-pocket-mockups_opt.jpg" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 3 -->
+                <div class="shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://i.pinimg.com/originals/2a/0c/9a/2a0c9afbc2a42e6d11fa66e024c1e976.jpg" alt="" class="rounded-tl-lg rounded-tr-lg w-[50rem]">                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's T-Shirt</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 644.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mx-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://www.filmyvastra.com/wp-content/uploads/2019/04/Pocket-avenger-1.jpg" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 4 -->
+                <div class="shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://img.ltwebstatic.com/images3_pi/2021/04/30/1619768584fc9f762d4f97b070fefe3f91b9bad585_thumbnail_405x552.jpg" alt="" class="rounded-tl-lg rounded-tr-lg w-[50rem]">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's T-Shirt</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 832.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mx-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://www.filmyvastra.com/wp-content/uploads/2019/04/Burgundy-Pocket-Avenger.jpg" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- WOMAN LOWER -->
+            <div class="my-20">
+                <div class="flex flex-row justify-between my-5 md:ml-[6rem]">
+                    <h2 class="text-4xl">Women's Lower</h2>
+                    <a href="" class="text-4xl ml-[12rem] flex flex-row">
+                        View All
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-flex-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ml-[1rem] md:ml-[5rem] gap-10">
+                <div class="shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://th.bing.com/th/id/OIP.kR6FVVEZRAnmpwbMkHyLgQHaRL?pid=ImgDet&w=151&h=350&c=7&dpr=1.5" alt="" class="rounded-tl-lg rounded-tr-lg ml-[10rem] md:ml-[3rem] w-[30rem]">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's T-Shirt</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 674.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-cols md:flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-2  flex flex-row justify-center hover:from-pink-600 hover:to-pink-600 mx-2 mt-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>Add to cart
+                            </a>
+                            <a href="https://www.filmyvastra.com/wp-content/uploads/2019/04/Pocket-avenger-black-1.jpg" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 2 -->
+                <div class="shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://th.bing.com/th/id/OIP.0JlRIV92xYbSWnPQf8PheQAAAA?pid=ImgDet&w=151&h=350&c=7&dpr=1.5" alt="" class="rounded-tl-lg rounded-tr-lg ml-[10rem] md:ml-[3rem] w-[30rem]">
+                    </div>
+                    <div class="ppy-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's T-Shirt</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 754.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mx-2 mt-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://www.filmyvastra.com/wp-content/uploads/2019/04/Avenger-pocket-mockups_opt.jpg" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 3 -->
+                <div class="shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://th.bing.com/th/id/OIP.uOeIFogqWyjToE_td9J-iAHaLW?pid=ImgDet&w=199&h=305&c=7&dpr=1.5" alt="" class="rounded-tl-lg rounded-tr-lg w-[50rem]">                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's T-Shirt</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 644.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mx-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://www.filmyvastra.com/wp-content/uploads/2019/04/Pocket-avenger-1.jpg" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 4 -->
+                <div class="shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://th.bing.com/th/id/OIP.JJQZlOW3_mmlnNtf6FZgVAHaSL?pid=ImgDet&w=143&h=350&c=7&dpr=1.5" alt="" class="rounded-tl-lg rounded-tr-lg ml-[10rem] md:ml-[3rem] w-[30rem]">                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's T-Shirt</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 832.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mx-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://www.filmyvastra.com/wp-content/uploads/2019/04/Burgundy-Pocket-Avenger.jpg" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--WOMEN SHIRT -->
+            <div class="my-20">
+                <div class="flex flex-row justify-between my-5 md:ml-[6rem]">
+                    <h2 class="text-4xl">Women's Shirt</h2>
+                    <a href="" class="text-4xl flex flex-row ml-[12rem]">
+                        View All
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-flex-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ml-[1rem] md:ml-[6rem] xl:grid-cols-4 gap-10">
+                <!-- image 1 -->
+                <div class="shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://th.bing.com/th/id/OIP.zDAoqlq1kgeBvBE-vI5V5AHaJb?pid=ImgDet&w=199&h=252&c=7&dpr=1.5" alt="" class="rounded-tl-lg rounded-tr-lg ml-[2rem] md:ml-auto w-[50rem]">                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's Shirt</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 864.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-cols md:flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-2  flex flex-row justify-center hover:from-pink-600 hover:to-pink-600 mt-5 mx-2 ">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://s3.amazonaws.com/proper-media/das4-shirts/40a7ccfa337221bb2cab583e7ff105472.jpg" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- image 2 -->
+                <div class="shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://th.bing.com/th/id/OIP._LYb8wNpJRmbiI3UdaB7tAAAAA?pid=ImgDet&w=199&h=259&c=7&dpr=1.5" alt="" class="rounded-tl-lg rounded-tr-lg md:ml-auto ml-[3rem] w-[50rem]">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's Shirt</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 774.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl mt-7">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mx-2 mt-8">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://th.bing.com/th/id/OIP.mxagVoom2VupR54pjqD1pAHaJZ?pid=ImgDet&w=199&h=252&c=7&dpr=1.5" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600 mx-2 mt-8">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                  </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- image 3 -->
+                <div class="shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://th.bing.com/th/id/OIP.DJ8Q6rbbdlZd2NTufHudHAHaJf?pid=ImgDet&w=202&h=258&c=7&dpr=1.5" alt="" class="rounded-tl-lg rounded-tr-lg md:ml-auto ml-[3rem] w-[50rem]">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's Shirt</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 738.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mt-7 mx-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://th.bing.com/th/id/OIP.dN8I1PxVjBN8yoTKG6MZRgAAAA?pid=ImgDet&w=199&h=298&c=7&dpr=1.5" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600 mt-7">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- image4 -->
+                <div class="shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://th.bing.com/th/id/OIP.sYxyE7jeljR814ivTjHDrAHaJm?pid=ImgDet&w=199&h=257&c=7&dpr=1.5" alt="" class="rounded-tl-lg rounded-tr-lg md:ml-auto ml-[3rem] w-[50rem]">                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's Shirt</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 674.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mt-7 mx-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://th.bing.com/th/id/OIP.1fCgTe0C-HQVoYRZyfnbqwHaJ3?pid=ImgDet&w=199&h=265&c=7&dpr=1.5" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600 mt-7">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--WOMEN PANTS -->
+            <div class="my-20">
+                <div class="flex flex-row justify-between my-5 md:ml-[6rem]">
+                    <h2 class="text-4xl">Women's Pants</h2>
+                    <a href="" class="text-4xl flex flex-row ml-[12rem]">
+                        View All
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-flex-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ml-[1rem] md:ml-[6rem] xl:grid-cols-4 gap-10">
+                <!-- image 1 -->
+                <div class="shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://th.bing.com/th/id/OIP._UbB4Riaur7Ture-dXX-PQHaLH?pid=ImgDet&w=199&h=298&c=7&dpr=1.5" alt="" class="rounded-tl-lg rounded-tr-lg w-[50rem]">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's Pant</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 674.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-cols md:flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-2  flex flex-row justify-center hover:from-pink-600 hover:to-pink-600 mx-2 mt-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://cdn.shopify.com/s/files/1/0202/3942/products/folded_ub355_grande.jpg?v=1533567972" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600 mx-2 mt-5">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                  </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- image 2 -->
+                <div class="shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://th.bing.com/th/id/OIP.Qzik34wP6HANncJ7LbDcLwHaLH?pid=ImgDet&w=199&h=298&c=7&dpr=1.5" alt="" class="rounded-tl-lg rounded-tr-lg w-[50rem]">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's T-Shirt</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 579.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mx-2 mt-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://s3-eu-west-1.amazonaws.com/ihf-images/pm/9/d799337a-4c3f-4937-a29a-e2ad00e747d0.jpg" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600 mx-2 mt-5">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                  </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- image 3 -->
+                <div class="shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://th.bing.com/th/id/OIP.gZtXlSeIHvv1McxrDKsw2gHaJ4?pid=ImgDet&w=199&h=265&c=7&dpr=1.5" alt="" class="rounded-tl-lg rounded-tr-lg w-[50rem]">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's Pant</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 674.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mx-2 mt-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://images.squarespace-cdn.com/content/v1/5c37cf61506fbe6befe9b173/1550781953426-IWUEOFIA6A9EQ27NNUD5/Navy+Stretch+Twill+-+link+to+product+page" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- image 4 -->
+                <div class="shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://th.bing.com/th/id/OIP.cxdP9x4U_ThDi0R0drrzxQHaJ4?pid=ImgDet&w=199&h=265&c=7&dpr=1.5" alt="" class="rounded-tl-lg rounded-tr-lg w-[50rem]">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's Pant</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 724.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">XXL</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">M</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">S</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mx-2 mt-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://images.squarespace-cdn.com/content/v1/5c37cf61506fbe6befe9b173/1550781948413-M1OTNNM70JFCEEJJB6UU/Khaki+Green+Stretch+Twill+-+link+to+product+page" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600 mx-2 mt-5">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--WOMEN SHOES -->
+            <div class="my-20">
+                <div class="flex flex-row justify-between my-5 md:ml-[6rem]">
+                    <h2 class="text-4xl">Women's Shoes</h2>
+                    <a href="" class="text-4xl flex flex-row ml-[12rem]">
+                        View All
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-flex-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ml-[1rem] md:ml-[6rem] xl:grid-cols-4 gap-10">
+                <!-- image 1 -->
+                <div class="shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://www.careyfashion.com/fashion/wp-content/uploads/2016/12/casual-shoes-for-women-9.jpg" alt="" class="rounded-tl-lg rounded-tr-lg md:h-[30rem] w-[50rem] h-[70rem]">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Women's Shoes</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 424.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">9</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">7</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">6</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">8</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">10</div>
+                        </div>
+                        <div class="flex flex-cols md:flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-2  flex flex-row justify-center hover:from-pink-600 hover:to-pink-600 mx-2 mt-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://images.bestsellerclothing.in/data/JJ/10-mar-2023/128855501_1.jpg?width=415&height=550&mode=fill&fill=blur&format=auto" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600 mx-2 mt-5">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--image 2-->
+                <div class="shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://th.bing.com/th/id/OIP.ROYYfZQx5pk_B-Zydr5YvgAAAA?pid=ImgDet&w=202&h=268&c=7&dpr=1.5" alt="" class="rounded-tl-lg rounded-tr-lg md:w-auto w-[50rem] md:h-[30rem]">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's Shoes</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 724.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">8</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">7</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">10</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">6</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">9</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mx-2 mt-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://images.bestsellerclothing.in/data/JJ/27-july-2023/141105102_g1.jpg?width=415&height=550&mode=fill&fill=blur&format=auto" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600 mx-2 mt-5">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- image 3 -->
+                <div class="shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://th.bing.com/th/id/OIP._5yG_ClAT2GPDMCbkVC8-gHaKM?pid=ImgDet&w=202&h=277&c=7&dpr=1.5" alt="" class="rounded-tl-lg rounded-tr-lg md:w-auto w-[50rem]">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's Shoes</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 484.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">10</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">6</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">8</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">7</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">9</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mx-2 mt-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                Add to cart
+                            </a>
+                            <a href="https://images.bestsellerclothing.in/data/JJ/22-mar-2023/128856101_g1.jpg?width=415&height=550&mode=fill&fill=blur&format=auto" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 md:py-2 px-14 md:px-4 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600 mx-2 mt-5">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- image 4 -->
+                <div class="shadow-lg rounded-lg md:w-auto w-[50rem]">
+                    <div>
+                        <img src="https://th.bing.com/th/id/OIP.4t5wS-CA422vjK69qQlxFwAAAA?pid=ImgDet&w=202&h=303&c=7&dpr=1.5" alt="" class="rounded-tl-lg rounded-tr-lg md:w-auto w-[50rem] ">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h3><a href="" class="text-3xl">Men's Shoes</a></h3>
+                        <a href="" class="">
+                            <div class="text-6xl ml-2 font-bold">₹ 724.00</div>
+                        </a>
+                        <div class="flex flex-row text-3xl my-3">
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">7</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">8</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">9</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">10</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md text-x5 px-2 py-1 mr-2">6</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <a href="" class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5  flex flex-row hover:from-pink-600 hover:to-pink-600 mx-4 mt-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                                    <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                                 Add to cart
+                            </a>
+                            <a href="https://images.bestsellerclothing.in/data/JJ/22-sep-2023/136605101_g1.jpg?width=415&height=550&mode=fill&fill=blur&format=auto" class="bg-gradient-to-r from-purple-600 to-purple-500 rounded-full py-8 px-14 text-gray-50 text-xl self-start my-5 flex flex-row hover:from-purple-600 hover:to-purple-600 mx-2 mt-5">
+                                View details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rounded-lg shadow-lg  flex flex-row ml-[5rem] w-[60rem]  ">
+            <div class="md:w-auto bg-gradient-to-r from-black via-purple-900 md:from-black md:via-purple-900 md:to-transparent rounded-lg text-gray-100 p-12">
+                <div class="w-1/2 ml-10">
+                    <h3 class="text-3xl font-extrbold mb-4">Subcribe to get our offers first</h3>
+                    <p class="mb-4 text-xl leading-relaxed">want to hear from us when we have new offers? Sign up for our newsletter and we'll email you every time we have new sale offers. </p>
+                    <div>
+                        <input type="email" placeholder="Enter email address" class="bg-gray-600 text-4xl text-gray-200 placeholder-gray-400 px-4 py-8 rounded-lg w-[50rem]  focus:outline-none mb-4">
+                        <button class="bg-red-800 w-[50rem] p-5 py-6 rounded-2xl font-semibold text-3xl hover:bg-red-600">Subsceibe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="md:w-2/5  lg:flex lg:flex-row hidden ml-[20rem] mt-[3rem]">
+                    <img src="https://freepngimg.com/thumb/finger/135844-pointing-finger-female-free-png-hq.png" alt="" class="w-auto">
+                </div>
+            </div>
+        </div>
+        <div class="border-t-4 border-gray-300 flex flex-col md:flex-row bg-gray-500 md:jusify-between w-[70rem] text-center py-12 text-3xl mt-16 mb-21">
+            <div class="mb-4">
+                <a href="" class="mx-4">About</a>
+                <a href="" class="mx-4">Privacy Policy</a>
+                <a href="" class="mx-4">Team of services</a>
+            </div>
+            <div class="">
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const navLinks = document.querySelector(".nav-links");
+        function onToggleMenu(e) {
+          e.name = e.name === "menu" ? "close" : "menu";
+          navLinks.classList.toggle("top-[9%]");
+        }
+      </script>
+</body>
+</html>
